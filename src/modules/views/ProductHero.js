@@ -4,15 +4,17 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
+import saumerios from '../images/saumerios.jpg';
 
-const backgroundImage =
-  'https://images.unsplash.com/photo-1534854638093-bada1813ca19?auto=format&fit=crop&w=1400&q=80';
+
+  
 
 const styles = theme => ({
   background: {
-    backgroundImage: `url(${backgroundImage})`,
+    backgroundImage: `url(${saumerios})`,
     backgroundColor: '#7fc7d9', // Average color of the background image.
-    backgroundPosition: 'center',
+    backgroundPosition: 'cover',
+    
   },
   button: {
     minWidth: 200,
@@ -29,6 +31,8 @@ const styles = theme => ({
   },
 });
 
+const backgroundImage =<img src={saumerios} alt='saumerios'/>
+
 function ProductHero(props) {
   const { classes } = props;
 
@@ -37,12 +41,14 @@ function ProductHero(props) {
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
       <Typography color="inherit" align="center" variant="h2" marked="center">
-        Upgrade your Sundays
-      </Typography>
-      <Typography color="inherit" align="center" variant="h5" className={classes.h5}>
-        Enjoy secret offers up to -70% off the best luxury hotels every Sunday.
-      </Typography>
-      <Button
+        MAS DE DIEZ AÑOS JUNTO A VOS 
+     </Typography> <br/>
+    
+     <Typography variant="body2" color="inherit" className={classes.more}>
+       Descubrenos
+      </Typography> <br/>
+      
+        <Button
         color="secondary"
         variant="contained"
         size="large"
@@ -50,11 +56,9 @@ function ProductHero(props) {
         component="a"
         href="/premium-themes/onepirate/sign-up/"
       >
-        Register
+        PRODUCTOS
       </Button>
-      <Typography variant="body2" color="inherit" className={classes.more}>
-        Discover the experience
-      </Typography>
+     
     </ProductHeroLayout>
   );
 }

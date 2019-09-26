@@ -51,7 +51,7 @@ function ProductValues(props) {
             <div className={classes.item}>
               <img
                 className={classes.image}
-                src={Values1}
+              
                 alt="suitcase"
               />
               <Typography variant="h6" className={classes.title}>

@@ -5,8 +5,8 @@ import Link from '@material-ui/core/Link';
 import Container from '@material-ui/core/Container';
 import Typography from '../components/Typography';
 import TextField from '../components/TextField';
-import Facebook from '../images/appFooterFacebook.svg';
-import Twitter from '../images/appFooterTwitter.svg';
+import Facebook from '../images/appFooterFacebook.png';
+import Twitter from '../images/appFooterTwitter.png';
 
 function Copyright() {
   return (
