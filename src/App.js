@@ -1,10 +1,10 @@
 import React from 'react';
-import Home from './Home';
+import Contactanos from './Contactanos';
 
 function App() {
   return (
     <div className="App">
-      <Home> </Home>
+    <Contactanos></Contactanos>
     </div>
   );
 }

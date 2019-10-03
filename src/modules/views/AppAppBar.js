@@ -61,15 +61,15 @@ function AppAppBar(props) {
             >
               {'Quienes somos'}
           </Link>
-          <div className={classes.right}>
+          <div className={classes.left}>
             <Link
               color="inherit"
               variant="h6"
               underline="none"
               className={classes.rightLink}
-              href="/premium-themes/onepirate/sign-in/"
+              href="/Contactanos"
             >
-              {'Sign In'}
+              {'Contactanos'}
             </Link>
             <Link
               variant="h6"
