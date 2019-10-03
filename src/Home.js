@@ -11,6 +11,7 @@ import ProductCTA from './modules/views/ProductCTA';
 import AppAppBar from './modules/views/AppAppBar';
 
 
+
 function Index() {
   return (
     <React.Fragment>
@@ -22,6 +23,7 @@ function Index() {
       <ProductCTA />
       <ProductSmokingHero />
       <AppFooter />
+  
     </React.Fragment>
   );
 }

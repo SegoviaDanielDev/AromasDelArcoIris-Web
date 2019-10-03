@@ -9,7 +9,7 @@ import ArrowDown from '../images/productHeroArrowDown.png';
 
 const styles = theme => ({
   root: {
-    color: theme.palette.common.white,
+    //color: theme.palette.common.white,
     position: 'relative',
     display: 'flex',
     alignItems: 'center',

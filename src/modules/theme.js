@@ -26,6 +26,12 @@ const rawTheme = createMuiTheme({
       xLight: green[50],
       dark: green[700],
     },
+    blanco: {
+      light: '#ffffff',
+      main: '#ffffff',
+      dark: '#ffffff',
+    },
+
   },
   typography: {
     fontFamily: "'Work Sans', sans-serif",

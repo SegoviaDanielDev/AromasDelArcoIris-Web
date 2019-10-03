@@ -4,16 +4,20 @@ import { withStyles } from '@material-ui/core/styles';
 import Button from '../components/Button';
 import Typography from '../components/Typography';
 import ProductHeroLayout from './ProductHeroLayout';
-import saumerios from '../images/saumerios.jpg';
+
+import Arcoiris from '../images/arcoiris.jpeg';
 
 
   
 
 const styles = theme => ({
   background: {
-    backgroundImage: `url(${saumerios})`,
-    backgroundColor: '#7fc7d9', // Average color of the background image.
-    backgroundPosition: 'cover',
+    backgroundImage: `url(${Arcoiris})`,
+    backgroundColor: '#000000', // Average color of the background image.
+    backgroundPosition: 'center',
+    backgroundSize: 'auto', 
+    height: 'auto',
+    width: 'auto',
     
   },
   button: {
@@ -31,7 +35,7 @@ const styles = theme => ({
   },
 });
 
-const backgroundImage =<img src={saumerios} alt='saumerios'/>
+const backgroundImage =<img src={Arcoiris} alt='arcoiris'/>
 
 function ProductHero(props) {
   const { classes } = props;
@@ -40,7 +44,7 @@ function ProductHero(props) {
     <ProductHeroLayout backgroundClassName={classes.background}>
       {/* Increase the network loading priority of the background image. */}
       <img style={{ display: 'none' }} src={backgroundImage} alt="increase priority" />
-      <Typography color="inherit" align="center" variant="h2" marked="center">
+      <Typography color='inherit' align="center" variant="h2" marked="center">
         MAS DE DIEZ AÑOS JUNTO A VOS 
      </Typography> <br/>
     

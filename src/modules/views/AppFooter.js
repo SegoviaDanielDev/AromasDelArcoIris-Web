@@ -7,6 +7,7 @@ import Typography from '../components/Typography';
 import TextField from '../components/TextField';
 import Facebook from '../images/appFooterFacebook.png';
 import Twitter from '../images/appFooterTwitter.png';
+import Contacto from '../components/contact';
 
 function Copyright() {
   return (
@@ -132,6 +133,7 @@ export default function AppFooter() {
                 </option>
               ))}
             </TextField>
+            <Contacto></Contacto>
           </Grid>
           <Grid item>
             <Typography variant="caption">
@@ -150,6 +152,7 @@ export default function AppFooter() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+
                 CC 3.0 BY
               </Link>
             </Typography>

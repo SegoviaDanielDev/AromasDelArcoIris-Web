@@ -5,6 +5,7 @@ import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
 import AppBar from '../components/AppBar';
 import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import Contact from '../components/contact';
 
 const styles = theme => ({
   title: {
@@ -68,7 +69,7 @@ function AppAppBar(props) {
               underline="none"
               className={classes.rightLink}
               href="/Contactanos"
-            >
+            > 
               {'Contactanos'}
             </Link>
             <Link
@@ -79,6 +80,8 @@ function AppAppBar(props) {
             >
               {'Sign Up'}
             </Link>
+            <Contact></Contact>
+            
           </div>
         </Toolbar>
       </AppBar>
